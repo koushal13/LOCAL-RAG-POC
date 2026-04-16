@@ -32,6 +32,32 @@ Teams and individuals often spend too much time searching through PDFs, meeting 
 
 In short, this solution turns scattered documents into a searchable knowledge assistant that is fast, private, and practical.
 
+### How it works end-to-end (simple story)
+Think of this solution like building a private "smart librarian" for your documents.
+
+1. You drop your files into the project.
+The system reads your PDFs and text files and breaks them into small, meaningful parts.
+
+2. It builds a memory of your content.
+Instead of storing only raw text, it converts each chunk into a format that captures meaning. This helps it find the right information even when your question uses different words.
+
+3. It organizes everything for fast search.
+Those meaning-based chunks are saved into a local search index (on your machine), so lookups are fast and accurate.
+
+4. You ask a question in plain English.
+The system finds the most relevant document pieces first, then uses a local AI model to generate a clear answer grounded in that evidence.
+
+5. You get an answer with traceable sources.
+It shows where the answer came from, so you can trust it and verify it.
+
+### Why this feels powerful (the "wow" moment)
+- You can ask one question across many documents and get a focused answer in seconds.
+- You do not need to manually open and scan multiple files.
+- Your data stays on your own machine, which is critical for privacy and control.
+- The same system works for both non-technical users (GUI) and technical teams (CLI/automation).
+
+Result: your documents go from static files to an interactive knowledge assistant.
+
 ## Architecture
 
 ### High-Level Components
