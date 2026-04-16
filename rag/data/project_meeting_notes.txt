@@ -1,0 +1,20 @@
+Project Meeting Notes - Q2 Planning
+
+Action items:
+- Build a local RAG assistant for internal docs by end of April.
+- Evaluate response quality using at least 10 benchmark questions.
+- Add source citation in answers for auditability.
+
+Deadlines:
+- Prototype demo: April 20
+- Internal review: April 25
+- Public repository publication: April 30
+
+Risks:
+- Poor retrieval quality on long PDFs
+- Missing metadata filters for document scoping
+
+Mitigations:
+- Tune chunk size and overlap
+- Increase top-k retrieval when context is sparse
+- Add reranking in a later iteration

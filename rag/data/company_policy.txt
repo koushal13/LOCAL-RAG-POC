@@ -1,0 +1,13 @@
+Company Security and Data Policy
+
+All employees must use multi-factor authentication for internal tools.
+Sensitive customer data must not be shared outside approved systems.
+Quarterly access reviews are mandatory for all production services.
+The security team conducts incident response drills every quarter.
+Any suspected data leak must be reported within 1 hour to security leadership.
+
+Engineering Onboarding Notes
+
+New engineers receive repository access on Day 1.
+Mandatory onboarding includes security training and local development setup.
+Mentors should schedule architecture walkthroughs during the first week.
