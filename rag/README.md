@@ -14,6 +14,22 @@ Why this setup:
 - Production-style modular architecture
 - Easy to clone and run for collaborators
 
+## Technologies Used (and Why)
+
+- Python: Main programming language used to build the full pipeline and CLI/GUI apps.
+- Sentence Transformers (`all-MiniLM-L6-v2`): Converts document chunks and user questions into semantic vectors so meaning can be matched, not just exact words.
+- ChromaDB: Local vector database that stores embeddings and enables fast similarity search for relevant context retrieval.
+- Ollama: Runs local LLMs on-device (for example `llama3.2`, `mistral`, `phi3`) to generate grounded answers.
+- Streamlit: Provides the browser-based GUI for non-technical users to rebuild the index and ask questions.
+- PyPDF: Extracts text from PDF files during ingestion.
+- Requests: Handles HTTP communication with the local Ollama API.
+
+Supporting architecture choices:
+- CLI (`src/app.py`): Automation-friendly workflow for technical users and scripts.
+- GUI (`src/gui_app.py`): Human-friendly testing and demos in a browser.
+- JSONL artifacts (`chunks/`, `embeddings/`): Simple, transparent intermediate outputs for debugging and reproducibility.
+- Modular source files (`ingest`, `embed`, `retrieve`, `rag_pipeline`): Cleaner maintenance and easier upgrades.
+
 ## For Non-Technical Readers
 
 ### What is this solution?
